@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.ssr/
+.tmp/
+tmp/
+.env
+.env.*
+*.tgz
+cd-report-*.txt
+.trebired/code-discipline/generated/reports/

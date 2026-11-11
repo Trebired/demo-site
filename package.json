@@ -1,0 +1,54 @@
+{
+  "author": "Miroslav Machynka (Trebired)",
+  "config": {
+    "organization": {
+      "displayName": "Trebired",
+      "name": "trebired",
+      "website": "https://trebired.com"
+    },
+    "product": {
+      "displayName": "Demo Site",
+      "name": "demo-site",
+      "website": "https://demo-site.trebired.com"
+    }
+  },
+  "name": "demo-site",
+  "version": "0.1.0",
+  "description": "Demo static site whose content is edited in Operlorn through the @trebired/frontend content management.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "packageManager": "bun@1.4.2",
+  "engines": {
+    "bun": ">=1.0.0"
+  },
+  "scripts": {
+    "dev": "code-discipline gate -- bun --hot src/bin/dev.ts",
+    "build": "bun src/bin/frontend/build.ts",
+    "discipline:check": "code-discipline check",
+    "discipline:fix": "code-discipline fix",
+    "typecheck": "tsc --noEmit",
+    "verify": "bun run discipline:check && bun run typecheck && bun run build"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.3.0",
+    "@trebired/bundler": "^5.19.1",
+    "@trebired/frontend": "^30.2.0",
+    "@trebired/i18n": "^0.7.4",
+    "@trebired/logger": "^3.0.4",
+    "@trebired/startup": "^0.8.2",
+    "@trebired/utils": "^0.9.9",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@trebired/code-discipline": "^8.0.3",
+    "@trebired/configs": "^0.9.0",
+    "@types/bun": "^1.4.4",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "sass": "^1.108.2",
+    "sharp": "^0.35.5",
+    "typescript": "5.7.3"
+  }
+}

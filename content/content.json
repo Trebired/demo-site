@@ -1,0 +1,34 @@
+{
+  "format": 1,
+  "fields": {
+    "about.body": {
+      "cs": [{ "type": "p", "runs": [{ "text": "Jsme malé studio, které tento web používá jako ukázku úprav obsahu." }] }],
+      "en": [{ "type": "p", "runs": [{ "text": "We are a small studio using this site to show content editing." }] }]
+    },
+    "footer.note": { "cs": "Ukázkový web s upravitelným obsahem.", "en": "A demo site with editable content." },
+    "home.cta": { "cs": { "href": "/posts", "label": "Číst články" }, "en": { "href": "/posts", "label": "Read the posts" } },
+    "home.lead": {
+      "cs": [{ "type": "p", "runs": [{ "text": "Každý text na této stránce lze upravit v editoru, " }, { "bold": true, "text": "bez zásahu do kódu" }, { "text": "." }] }],
+      "en": [{ "type": "p", "runs": [{ "text": "Every text on this page can be changed in the editor, " }, { "bold": true, "text": "without touching the code" }, { "text": "." }] }]
+    },
+    "home.title": { "cs": "Obsah, který upravíte sami", "en": "Content you edit yourself" }
+  },
+  "collections": {
+    "posts": [
+      {
+        "id": "p1",
+        "values": {
+          "cs": { "body": [{ "type": "p", "runs": [{ "text": "První článek ukázkového webu." }] }], "date": "2026-11-01", "summary": "Jak funguje úprava obsahu.", "title": "Vítejte na ukázkovém webu" },
+          "en": { "body": [{ "type": "p", "runs": [{ "text": "The first post of the demo site." }] }], "date": "2026-11-01", "summary": "How content editing works.", "title": "Welcome to the demo site" }
+        }
+      },
+      {
+        "id": "p2",
+        "values": {
+          "cs": { "body": [{ "type": "p", "runs": [{ "text": "Články se přidávají, mažou a řadí v editoru." }] }], "date": "2026-11-05", "summary": "Seznamy s libovolným počtem položek.", "title": "Články a seznamy" },
+          "en": { "body": [{ "type": "p", "runs": [{ "text": "Posts are added, removed and ordered in the editor." }] }], "date": "2026-11-05", "summary": "Lists with any number of items.", "title": "Posts and lists" }
+        }
+      }
+    ]
+  }
+}
